@@ -1,0 +1,92 @@
+site_name: Geografi Kelas XII
+site_description: Materi Geografi kelas XII untuk belajar mandiri, pendamping tatap muka, dan persiapan ujian
+site_author: MA Syarikat Islam Parakansalak
+# GANTI: isi dengan alamat repositori dan situs Anda
+site_url: https://USERNAME.github.io/geografi-xii-masip/
+repo_url: https://github.com/USERNAME/geografi-xii-masip
+repo_name: geografi-xii-masip
+copyright: MA Syarikat Islam Parakansalak
+
+theme:
+  name: material
+  language: id
+  font: false              # tanpa Google Fonts: hemat data, lebih cepat di HP
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Mode gelap
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Mode terang
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - content.code.copy
+
+exclude_docs: |
+  _template/
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Beranda: index.md
+  - CP dan TP: cp-tp.md
+  - "Bab 1: Pengembangan Wilayah & Tata Ruang":
+      - Ikhtisar Bab: bab-1-pengembangan-wilayah/index.md
+      - "A. Pengembangan Wilayah": bab-1-pengembangan-wilayah/a-pengembangan-wilayah.md
+      - "B. Pengembangan Desa dan Kota": bab-1-pengembangan-wilayah/b-pengembangan-desa-kota.md
+      - "C. Tata Ruang dan Dinamikanya dalam Pembangunan...": bab-1-pengembangan-wilayah/c-tata-ruang.md
+      - "D. Indeks Kebahagiaan sebagai Hasil Pembangunan": bab-1-pengembangan-wilayah/d-indeks-kebahagiaan.md
+      - "E. Pengaruh Pengembangan Wilayah dan Tata Ruang...": bab-1-pengembangan-wilayah/e-pengaruh-kebahagiaan.md
+      - Latihan Bab 1: bab-1-pengembangan-wilayah/latihan.md
+  - "Bab 2: Pembangunan & Revolusi Industri":
+      - Ikhtisar Bab: bab-2-pembangunan-revolusi-industri/index.md
+      - "A. Pengertian, Paradigma, Pendekatan, dan Indika...": bab-2-pembangunan-revolusi-industri/a-paradigma-indikator-pembangunan.md
+      - "B. Revolusi Industri 4.0 dan Masyarakat 5.0": bab-2-pembangunan-revolusi-industri/b-revolusi-industri-masyarakat-5.md
+      - "C. Kesejahteraan Penduduk sebagai Hasil Pembangunan": bab-2-pembangunan-revolusi-industri/c-kesejahteraan-penduduk.md
+      - "D. Pengaruh Pembangunan Wilayah dan Revolusi Ind...": bab-2-pembangunan-revolusi-industri/d-pengaruh-terhadap-kesejahteraan.md
+      - Latihan Bab 2: bab-2-pembangunan-revolusi-industri/latihan.md
+  - "Bab 3: Kerja Sama Antarnegara":
+      - Ikhtisar Bab: bab-3-kerja-sama-antarnegara/index.md
+      - "A. Kerja Sama Antarnegara": bab-3-kerja-sama-antarnegara/a-kerja-sama-antarnegara.md
+      - "B. Geopolitik Indonesia sebagai Potensi Menjalin...": bab-3-kerja-sama-antarnegara/b-geopolitik-indonesia.md
+      - "C. Kerja Sama Indonesia dalam Kancah Internasional": bab-3-kerja-sama-antarnegara/c-kerja-sama-indonesia.md
+      - "D. Pengaruh Kerja Sama Antarnegara terhadap Keta...": bab-3-kerja-sama-antarnegara/d-ketahanan-wilayah.md
+      - Latihan Bab 3: bab-3-kerja-sama-antarnegara/latihan.md
+  - Persiapan Ujian:
+      - Panduan Persiapan: persiapan-ujian/index.md
+      - Bank Soal: persiapan-ujian/bank-soal.md
+  - Glosarium: glosarium.md

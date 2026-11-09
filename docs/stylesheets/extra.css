@@ -1,0 +1,5 @@
+/* Nyaman dibaca di HP */
+.md-typeset { font-size: 0.82rem; line-height: 1.7; }
+.md-typeset table:not([class]) { font-size: 0.75rem; }
+.md-typeset img { max-width: 100%; height: auto; }
+.md-typeset .tujuan { border-left: 4px solid var(--md-primary-fg-color); padding-left: .8rem; }
