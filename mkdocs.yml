@@ -2,9 +2,9 @@ site_name: Geografi Kelas XII
 site_description: Materi Geografi kelas XII untuk belajar mandiri, pendamping tatap muka, dan persiapan ujian
 site_author: MA Syarikat Islam Parakansalak
 # GANTI: isi dengan alamat repositori dan situs Anda
-site_url: https://USERNAME.github.io/geografi-xii-masip/
-repo_url: https://github.com/USERNAME/geografi-xii-masip
-repo_name: geografi-xii-masip
+site_url: https://nureeves.github.io/geo12/
+repo_url: https://github.com/nureeves/geo12
+repo_name: geo12
 copyright: MA Syarikat Islam Parakansalak
 
 theme:
